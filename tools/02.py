@@ -28,11 +28,11 @@ def split_image_into_parts(input_dir, output_dir):
 
             img = Image.open(image_path)
             width, height = img.size
-            step_w, step_h = width // 4, height // 4
+            step_w, step_h = width // 3, height // 3
 
             # Generate and save 9 cropped images
-            for i in range(4):
-                for j in range(4):
+            for i in range(3):
+                for j in range(3):
                     left = i * step_w
                     upper = j * step_h
                     right = (i + 1) * step_w
@@ -45,6 +45,7 @@ def split_image_into_parts(input_dir, output_dir):
 
 
 # Example usage
-input_dir = 'D:\Master Project\model\model-1\Corallo-vs-Myxo\\train'
-output_dir = 'D:\Master Project\model\model-1\Corallo-vs-Myxo\\train2'
+input_dir = 'D:\Master Project\model\model-1\myxo-vs-nonmyxo-V2'
+output_dir = 'D:\Master Project\model\model-1\myxo-vs-nonmyxo-V2-9p'
+
 split_image_into_parts(input_dir, output_dir)
