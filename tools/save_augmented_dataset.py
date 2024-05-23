@@ -74,10 +74,10 @@ class AddGaussianNoise(object):
 
 
 # Define Parameters
-data_path = 'D:\Master Project\model\model-1\germany-data-full-classes-4p'
+data_path = 'C:\\Users\Mahdiar\Desktop\\new_dataset4'
 num_magnitude_bins = 100
-train_num_samples_per_class = 1000
-val_num_samples_per_class = 600
+train_num_samples_per_class = 10000
+val_num_samples_per_class = 2000
 
 # Define any additional transformations
 aug_transform = transforms.Compose([
@@ -110,5 +110,6 @@ print('-' * 50)
 print('train dataset: ', len(datasets['train']))
 print('val dataset: ', len(datasets['val']))
 
-save_dataset_to_path(datasets['train'], 'D:\Master Project\model\model-1\\germany-data-full-classes-4p-augmented\\train')
-save_dataset_to_path(datasets['val'], 'D:\Master Project\model\model-1\\germany-data-full-classes-4p-augmented\\val')
+save_dataset_to_path(datasets['train'], 'C:\\Users\Mahdiar\Desktop\\new_dataset4-augment\\train')
+save_dataset_to_path(datasets['val'], 'C:\\Users\Mahdiar\Desktop\\new_dataset4-augment\\val')
+

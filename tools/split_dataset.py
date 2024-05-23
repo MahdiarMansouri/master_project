@@ -121,13 +121,13 @@ def split_dataset(root_dir, output_dir, validation_ratio):
 
 
 # Usage
-root_dir = 'D:\\Dataset\DIBaS-Bacteria-dataset'
-output_dir = 'D:\\Dataset\DIBaS-Bacteria-dataset-split'  # Output path for train/val folders
+root_dir = 'D:\\Dataset\segment_dataset-2'
+output_dir = 'D:\\Dataset\segment_dataset-2-split'  # Output path for train/val folders
 validation_ratio = 0.2
 # split_dataset(root_dir, output_dir, validation_ratio)
 
 # Example usage
-input_dir = 'D:\Dataset\DiBaS-Bacteria-dataset-split\\val'
-output_dir = 'D:\Dataset\DiBaS-Bacteria-dataset-split-4p\\val'
-split_by_size(input_dir, output_dir, 224)
-# split_image_into_parts(input_dir, output_dir, 2)
+input_dir = 'D:\Master Project\model\model-1\segment_dataset-2\\val'
+output_dir = 'D:\Master Project\model\model-1\segment_dataset-2-split\\val'
+# split_by_size(input_dir, output_dir, 224)
+split_image_into_parts(input_dir, output_dir, 3)
