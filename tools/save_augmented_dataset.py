@@ -74,7 +74,7 @@ class AddGaussianNoise(object):
 
 
 # Define Parameters
-data_path = 'C:\\Users\Mahdiar\Desktop\\new_dataset4'
+data_path = 'D:\Master Project\model\model-1\myxo-vs-nonmyxo-V2-9p-filtered-3classes'
 num_magnitude_bins = 100
 train_num_samples_per_class = 10000
 val_num_samples_per_class = 2000
@@ -110,6 +110,6 @@ print('-' * 50)
 print('train dataset: ', len(datasets['train']))
 print('val dataset: ', len(datasets['val']))
 
-save_dataset_to_path(datasets['train'], 'C:\\Users\Mahdiar\Desktop\\new_dataset4-augment\\train')
-save_dataset_to_path(datasets['val'], 'C:\\Users\Mahdiar\Desktop\\new_dataset4-augment\\val')
+save_dataset_to_path(datasets['train'], 'D:\Master Project\model\model-1\myxo-vs-nonmyxo-V2-9p-filtered-3classes-augmented\\train')
+save_dataset_to_path(datasets['val'], 'D:\Master Project\model\model-1\myxo-vs-nonmyxo-V2-9p-filtered-3classes-augmented\\val')
 
